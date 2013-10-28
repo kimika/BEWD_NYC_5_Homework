@@ -1,21 +1,5 @@
 
 require 'minitest/autorun'
-class Story 
-  attr_accessor :title
-  attr_accessor :category
-  attr_accessor :upvotes
-   def initialize title, category
-  @title = title
- @category = category
-  @upvotes = 1
-end
-def upvote
-  @upvotes = upvotes + 1
-end
-def downvote
-  @upvotes =  upvotes - 1
-end 
-end
 
 
 ### Write your code above the tests ###
