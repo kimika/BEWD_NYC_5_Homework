@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 
 class Story
-  def initialize title, category
+  def initialize title, category, upvotes
     @title = title
     @category = category
     @upvotes = upvotes
@@ -11,7 +11,7 @@ class Story
     upvotes = 1
   end
 
-  def upvote
+  def upvote_downvote
     upvote = upvotes + 1
     downvote = upvotes - 1
   end
