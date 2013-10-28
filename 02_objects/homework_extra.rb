@@ -1,4 +1,22 @@
+
 require 'minitest/autorun'
+class Story 
+  attr_accessor :title
+  attr_accessor :category
+  attr_accessor :upvotes
+   def initialize title, category
+  @title = title
+ @category = category
+  @upvotes = 1
+end
+def upvote
+  @upvotes = upvotes + 1
+end
+def downvote
+  @upvotes =  upvotes - 1
+end 
+end
+
 
 ### Write your code above the tests ###
 describe Story do 
@@ -14,11 +32,11 @@ describe Story do
   end
 
   it "can be upvoted and downvoted" do
-    story = Story.new "Wombat sees dentist after 10 year hiatus", "Nature"
-    story.upvote
-    story.upvotes.must_equal 2
+    Story = Story.new "Wombat sees dentist after 10 year hiatus", "Nature"
+    Story.upvote
+    Story.upvotes.must_equal 2
 
-    story.downvote
-    story.upvotes.must_equal 1
+    Story.downvote
+    Story.upvotes.must_equal 1
   end
 end
