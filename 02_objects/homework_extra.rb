@@ -16,11 +16,11 @@ describe Story do
   end
 
   it "can be upvoted and downvoted" do
-    Story = Story.new "Wombat sees dentist after 10 year hiatus", "Nature"
-    Story.upvote
-    Story.upvotes.must_equal 2
+    story = Story.new "Wombat sees dentist after 10 year hiatus", "Nature"
+    story.upvote
+    story.upvotes.must_equal 2
 
-    Story.downvote
-    Story.upvotes.must_equal 1
+    story.downvote
+    story.upvotes.must_equal 1
   end
 end
