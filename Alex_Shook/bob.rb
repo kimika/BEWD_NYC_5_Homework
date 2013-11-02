@@ -1,6 +1,5 @@
 class Bob
   def hey(phrase)
-    result = ''
     if phrase.empty? || phrase.squeeze.length < 2
       'Fine. Be that way!'
     elsif phrase == phrase.upcase
