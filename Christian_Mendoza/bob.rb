@@ -13,7 +13,7 @@ class Bob
     if is_silent?
       response[0]
     elsif is_yelling?
-      # additional checks for bonus homework
+      # BEGIN additional checks for bonus homework
       if has_numbers?
         if ends_exclaimation?
           response[1]
@@ -22,7 +22,7 @@ class Bob
         elsif has_no_punctuations?
           response[3]
         end
-      # additional checks for bonus homework
+      # END additional checks for bonus homework
       else
         response[1]
       end
