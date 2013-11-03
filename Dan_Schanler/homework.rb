@@ -1,12 +1,12 @@
 require 'minitest/autorun'
 
 class Person
-	attr_accessor :name, :profession
-
 	def initialize name, profession
-		@name = name
-		@profession = profession
+    	@name = name
+    	@profession  = profession
 	end
+
+	# attr_reader :name, :profession	
 
 	def introduce
 		"Hi! My name is #{@name}. I'm a #{@profession}"
@@ -15,7 +15,6 @@ class Person
 	def introduce_from_across_the_room
 		introduce.upcase
 	end
-
 end
 
 describe Person do 
