@@ -1,39 +1,64 @@
 class Bob
+  statement = ''
+
   def hey (message)
     respond (message)
   end
 
-  def respond (msg)
-    response = ["Fine. Be that way!", "Woah, chill out!", "Sure.", "Whatever."]
-    
-    if is_silent? (msg)
+  def respond (statement)
+    response = ['Fine. Be that way!', 'Woah, chill out!', 'Sure.', 'Whatever.']
+
+    @statement = statement
+
+    if is_silent?
       response[0]
-    elsif is_yelling? (msg)
-      response[1]
-    elsif is_questioning? (msg)
+    elsif is_yelling?
+      # additional checks for bonus homework
+      if has_numbers?
+        if ends_exclaimation?
+          response[1]
+        elsif is_questioning?
+          response[2]
+        elsif has_no_punctuations?
+          response[3]
+        end
+      # additional checks for bonus homework
+      else
+        response[1]
+      end
+    elsif is_questioning?
       response[2]
     else
       response[3]
     end
   end
 
-  def is_silent? (msg)
-    msg.squeeze.length<2
+  def is_silent?
+    @statement.squeeze.length < 2
   end
 
-  def is_yelling? (msg)
-    msg == msg.upcase
+  def is_yelling?
+    @statement == @statement.upcase
   end
 
-  def is_questioning? (msg)
-    msg.end_with? "?"
+  def is_questioning?
+    @statement.end_with? '?'
   end
 
-  def has_numbers? (msg)
-    if msg.to_i != 0
-      true
-    else
-      false
-    end
+  def has_numbers?
+    @statement.to_i != 0
+    #(@msg =~ /[0-9]/) == 0
+  end
+
+  def ends_exclaimation?
+    @statement.end_with? '!'
+  end
+
+  def ends_period?
+    @statement.end_with? '.'
+  end
+
+  def has_no_punctuations?
+    !is_questioning? || !ends_exclaimation? || !ends_period?
   end
 end
