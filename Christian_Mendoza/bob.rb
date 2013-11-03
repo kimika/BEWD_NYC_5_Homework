@@ -1,6 +1,4 @@
 class Bob
-  statement = ''
-
   def hey (message)
     respond (message)
   end
