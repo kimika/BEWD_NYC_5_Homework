@@ -1,4 +1,6 @@
 class Bob
+  # response/statement mappings: http://bit.ly/171Yper 
+
   def hey (message)
     respond (message)
   end
