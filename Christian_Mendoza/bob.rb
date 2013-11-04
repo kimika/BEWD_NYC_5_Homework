@@ -34,6 +34,6 @@ class Bob
   end
 
   def has_letters?
-    @statement.match(/[a-zA-z]/)
+    @statement.match(/[A-Z]/)
   end
 end
