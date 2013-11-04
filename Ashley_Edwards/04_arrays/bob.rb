@@ -5,7 +5,7 @@ class Bob
        "Woah, chill out!"
     elsif message.include?("?")
       "Sure"
-    elsif result == nil 
+    elsif message == nil
         "Fine. Be that way!"
     else 
       "Whatever."
