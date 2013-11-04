@@ -34,8 +34,4 @@ class Bob
   def has_letters?
     @statement.match(/[a-zA-z]/)
   end
-
-  def has_numbers?
-    @statement.to_i != 0
-  end
 end
