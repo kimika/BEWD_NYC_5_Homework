@@ -21,6 +21,6 @@ class Bob
   end
 
   def is_silent?(message)
-    message.empty? || message.squeeze.length < 2
+    message.squeeze.length < 2
   end
 end
