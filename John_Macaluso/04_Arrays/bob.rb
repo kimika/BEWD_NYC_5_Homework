@@ -1,14 +1,21 @@
 class Bob  
    def hey(message)
+      
       response = ["Whatever.", "Sure.", "Woah, chill out!", "Fine. Be that way!"]
-      if message.strip.empty?
+      
+      silence = message.strip.empty?
+      aggressive = message == message.upcase && message.match(/[a-zA-Z]/)
+      indifferent = message[-1] == "?"
+      
+      if silence
          response[3]
-      elsif message == message.upcase && message.match(/[a-zA-Z]/)
+      elsif aggressive
          response[2]
-      elsif message[-1] == "?"
+      elsif indifferent
          response[1]
       else
          response[0]
       end
+      
    end
 end
