@@ -32,7 +32,7 @@ class Bob
   end
 
   def has_letters?
-  	@statement.match(/[a-zA-z]/)
+    @statement.match(/[a-zA-z]/)
   end
 
   def has_numbers?
