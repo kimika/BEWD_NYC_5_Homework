@@ -2,7 +2,8 @@ class Bob
 
   def hey(message)   #also responds to ! (screamed at)
 
-  if  message == ('') || message == ('    ')
+  if  message.strip.empty?
+
       "Fine. Be that way!"
 
   elsif message == message.upcase#also a respose to shouting with numbers
