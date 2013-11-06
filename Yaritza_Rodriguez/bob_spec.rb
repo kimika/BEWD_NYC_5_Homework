@@ -62,7 +62,7 @@ describe Bob do
   end
 
   it "responds to silence" do
-    skip
+
     assert_equal 'Fine. Be that way!', teenager.hey('')
   end
 
