@@ -8,6 +8,6 @@ class Bob
 		'Sure.'   
     else
     	'Whatever.'
-  end
  end
 end
+

@@ -1,6 +1,4 @@
-
 require 'minitest/autorun'
-
 
 ### Write your code above the tests ###
 describe Story do 

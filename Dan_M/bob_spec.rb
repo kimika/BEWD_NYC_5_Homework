@@ -54,7 +54,7 @@ describe Bob do
   end
 
   it "responds to statements containing a question mark" do
-    
+              
     assert_equal 'Whatever.', teenager.hey('Ending with ? means a question.')
   end
 
