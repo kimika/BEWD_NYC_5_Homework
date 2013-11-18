@@ -1,0 +1,20 @@
+Final Project Outline
+
+App: Are You Smarter Than Your Congressman? 
+      Can You Beat The Boehner (aka, The Bill Terminator)?
+
+Description: A true/false facts-based game that pits the user vs United States Congressman John Boehner
+
+How it will work: Using Factcheck.org and GitHub's new U.S. government repositories in http://government.github.com/, this application will utilize government databases for facts; pull the congressman's quotes from media outlets' APIs; and, create a basic template that has the user's avatar play against Congressman Boehner. Each question will be a quote from Boehner on a particular topic. For each answer, the a particular facial expression from Congressman Boehner will appear along with a pithy quote regarding the answer if it is true or false. Images will come from the web and include Congressman Boehner crying, fist-pumping, chowing down, smiling, clapping, etc. In addition to a new image, a link will appear that will lead the user to the actual fact.
+
+Game Topics:
+
+- On The Declaration of Independence
+- On The United States Constitution
+- On Economics 101
+- On Geography
+- On Religion
+- On Healthcare
+- On Taxes
+- On U.S. History
+
